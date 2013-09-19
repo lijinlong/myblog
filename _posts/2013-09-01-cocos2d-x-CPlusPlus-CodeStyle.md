@@ -1,7 +1,11 @@
 ---
-layout: default
+layout: post
 title: Cocod2d-x C++ CodeStyle
+category : basic
+tagline: ""
+tags : [codestyle, cocos2d, C++]
 ---
+{% include JB/setup %}
 
 # {{page.title}}
 

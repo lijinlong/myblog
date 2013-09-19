@@ -1,3 +1,12 @@
+---
+layout: post
+title: Mou Markdown templete
+category : setup
+tagline: "templete for markdown"
+tags : [intro, beginner, jekyll, tutorial, markdown]
+---
+{% include JB/setup %}
+
 # Mou
 
 ![Mou icon](http://mouapp.com/Mou_128.png)
@@ -60,7 +69,7 @@ Ordered lists are created using "1." + Space:
 
 #### Unordered Lists
 
-Unordered list are created using "*" + Space:
+Unordered list are created using "\*" + Space:
 
 * Unordered list item
 * Unordered list item
@@ -213,8 +222,8 @@ afdasdfdsf
 * Convert to H4: Cmd + 4
 * Convert to H5: Cmd + 5
 * Convert to H6: Cmd + 6
-* Convert Spaces to Tabs: Control + [
-* Convert Tabs to Spaces: Control + ]
+* Convert Spaces to Tabs: Control + \[
+* Convert Tabs to Spaces: Control + \]
 * Insert Current Date: Control + Shift + 1
 * Insert Current Time: Control + Shift + 2
 * Insert entity <: Control + Shift + ,
@@ -222,8 +231,8 @@ afdasdfdsf
 * Insert entity &: Control + Shift + 7
 * Insert entity Space: Control + Shift + Space
 * Insert Scriptogr.am Header: Control + Shift + G
-* Shift Line Left: Select lines, Cmd + [
-* Shift Line Right: Select lines, Cmd + ]
+* Shift Line Left: Select lines, Cmd + \[
+* Shift Line Right: Select lines, Cmd + \]
 * New Line: Cmd + Return
 * Comment: Cmd + /
 * Hard Linebreak: Control + Return
