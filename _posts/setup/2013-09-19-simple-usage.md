@@ -70,5 +70,8 @@ tags: [intro, beginner, jekyll, tutorial]
     | &lt; | &#60; | &amp;lt; |
     | &gt; | &#62; | &amp;gt; |
     
+5. 服务器没有应用css
+    比较发现assets没有commit去，原因是css所在的文件夹assets被我设置成了全局ignore，传上去就能显示了。跟本地风格还是不太一致，摘事件在研究
+    
  
    
