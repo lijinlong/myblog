@@ -191,7 +191,8 @@ cocos2d-x C++ coding style 基于 [Google's C++ coding style rev. 3.260](http://
                  static WorldPeace* create(int numberOfPreachers);
                
                  /** sets the number of preachers that will try to create the world peace.
-                  The more the better. But be aware that corruption might appear if  the number if higher than the 20% of the population.
+                  The more the better. But be aware that corruption might appear 
+                  if the number if higher than the 20% of the population.
                  */
                  void setNumberOfPreachers(int numberOfPreachers);
                  

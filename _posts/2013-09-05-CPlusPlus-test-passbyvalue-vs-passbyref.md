@@ -8,8 +8,17 @@ tags : [C++, 参数传递]
 {% include JB/setup %}
 
 # C++参数传值与传引用测试
-下面的代码控制台CClog的输出是什么？共创建了几个对象？
 
+{% highlight java %}
+public class HelloWorld {
+    public static void main(String args[]) {
+      System.out.println("Hello World!");
+    }
+}
+{% endhighlight %}
+
+下面的代码控制台CClog的输出是什么？共创建了几个对象？
+{% highlight cpp linenos %}
         namespace test {
             static int TestObj_count;
             class TestObj {
@@ -56,4 +65,4 @@ tags : [C++, 参数传递]
             test::testPassByRef(obj2);
             CCLog("after, obj %d origin is 12, gen obj %d", obj2.getI(), test::TestObj::getObjCount());
         }
-
+{% endhighlight %}
