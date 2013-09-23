@@ -4,6 +4,8 @@ permalink: /:categories/:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 pygments: true
+#safe: true
+#auto: true
 
 markdown: rdiscount
 
@@ -84,7 +86,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
+      short_name : lijinlongblog
     livefyre :
       site_id : 123
     intensedebate :

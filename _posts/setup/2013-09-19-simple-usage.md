@@ -96,3 +96,13 @@ tags: [intro, beginner, jekyll, tutorial]
     * 使用`\{\% highlight html%\}` and `\{\% endhighlight \%\}`包含需要语法高亮的代码
     * 使用`\{\% highlight html linenos=table \%\}`添加行号, 这样拷贝时不会把行号一起拷贝
     
+9. 添加评论， 使用disqus
+    * 去disqus注册
+    * 修改_config.yml
+    
+            comments :
+                provider : disqus
+                disqus :
+                  short_name : lijinlongblog
+
+    
