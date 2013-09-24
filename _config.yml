@@ -84,7 +84,7 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : disqus
+    provider : uyan
     disqus :
       short_name : lijinlongblog
     livefyre :
@@ -96,6 +96,8 @@ JB :
       num_posts: 5
       width: 580
       colorscheme: light
+    uyan :
+      user_id : 1844582
    
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
