@@ -105,4 +105,44 @@ tags: [intro, beginner, jekyll, tutorial]
                 disqus :
                   short_name : lijinlongblog
 
+10. 更换评论系统， 更换为友言
+    disqus虽好, 可惜不是很符合中国国情，中国用户用的比较多的微博，QQ在disqus上没有相应支持，因此开率更换评论系统，最后选择了友言。
     
+    * 注册友言账号 [http://www.uyan.cc/](http://www.uyan.cc/)
+    
+    * 注册完成后，网站会给你一段包含你的用户id的javascript代码。记录下里面的userId
+    * 修改`_include/JB/comments` 在 case site.JB.comments.provider 的代码段添加下面的代码,`去掉百分号与或括号之间的减号`
+    
+            {-% when "uyan" %-}
+              {-% include JB/comments-providers/uyan %-}
+    
+    * 添加`_includes/JB/comments-providers/uyan`文件，内容如下
+    
+            <!-- UY BEGIN -->
+            <div id="uyan_frame"></div>
+            <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=\{\{ site.JB.comments.uyan.user_id \}\}"></script>
+            <!-- UY END -->
+
+    * 修改`_config.yml`文件 JB.comments段, 添加JB.comments.uyan段
+    
+              comments :
+                provider : uyan
+                uyan :
+                  user_id : <your_id>
+
+11. 添加分享功能，使用的是加网
+    * 注册账号[http://www.jiathis.com/](http://www.jiathis.com/)与友言使用相同账号即可
+    * 修改`_includes/JB/sharing`在case段添加友言的处理， `去掉百分号与或括号之间的减号`
+    
+              {-% when "jiathis" %-}
+                {-% include JB/sharing-provider/jiathis %-}
+                
+    * 添加`_includes/JB/sharing-provider/jiathis`文件，将在网站上定制好的代码粘贴到这个文件里，然后将uid=后面的id替换为变量\{\{ site.JB.sharing.uyan.user\_id \}\}, 如果不考虑给别人用，直接把代码粘过来就可以了。
+    * 修改`_config.yml`文件JB.sharing段
+    
+            sharing :
+              provider : jiathis
+              jiathis :
+                user_id : <your_id>
+ 
+ 
