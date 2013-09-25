@@ -37,10 +37,11 @@
     </h1>
     <ul class="nav">
       <li><a class="home" href="{{ HOME_PATH }}">Home</a></li>
-      <li><a  href="/archive.html">Archive</a></li>
-      <li><a  href="/pages.html">Pages</a></li>
-      <li><a  href="/categories.html">Categories</a></li>
-      <li><a  href="/tags.html">Tags</a></li>
+      <li><a  href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+      <li><a  href="{{ BASE_PATH }}{{ site.JB.pages_path }}">Pages</a></li>
+      <li><a  href="{{ BASE_PATH }}{{ site.JB.categories_path }}">Categories</a></li>
+      <li><a  href="{{ BASE_PATH }}{{ site.JB.tags_path }}">Tags</a></li>
+      <li><a  href="{{ BASE_PATH }}{{ site.JB.about_path }}">About</a></li>
     </ul>
   </div>
 
