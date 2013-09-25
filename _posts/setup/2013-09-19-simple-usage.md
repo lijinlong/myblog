@@ -145,4 +145,4 @@ tags: [intro, beginner, jekyll, tutorial]
               jiathis :
                 user_id : <your_id>
  
- 
+    * 在对应主题的post.html中添加{-% include JB/sharing %-}
