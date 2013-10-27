@@ -339,7 +339,7 @@ tags : [codestyle, google, C++]
                 };
                 MyType m{2, 3, 5, 7};
          
-         * 没有initializer_list构造函数的类，花括号出事后会自动调用一般的狗仔偶函数
+         * 没有initializer_list构造函数的类，花括号出事后会自动调用一般的构造函数
          
                  double d{1.23};
                 // Calls ordinary constructor as long as MyOtherType has no
